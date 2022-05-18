@@ -4,6 +4,9 @@ services:
     build:
       context: x11
       dockerfile: Dockerfile
+    container_name: x11
+    ports:
+      - 3389:3389
   web:
     build:
       context: ./php

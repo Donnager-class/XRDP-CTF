@@ -18,31 +18,31 @@ export XDG_CONFIG_DIRS=/etc/xdg/xdg-Lubuntu:/etc/xdg\\n\
 " > ~/.xsessionrc' /etc/xrdp/startwm.sh
 
 #Adding additional user with no password and adding personal information.
-#User1
+#User2
 RUN useradd -m amosburton
 RUN mkdir -p /home/amosburton/.ssh
 RUN passwd -d amosburton
 RUN touch reminder.txt
 RUN echo "Reminder: I need to update my password for my work email: timothybaltimore89@gmail.com" >> /home/amosburton/reminder.txt
-#User2
+#User3
 RUN useradd -m rocinante
 RUN mkdir -p /home/rocinante/.ssh
 RUN passwd -d rocinante
 RUN touch IOU.txt
 RUN echo "IOU: Buy Bobby Draper Coffee." >> /home/rocinante/IOU.txt
-#User1
+#User4
 RUN useradd -m belterInaros
 RUN mkdir -p /home/belterInaros/.ssh
 RUN passwd -d belterInaros
 RUN touch next_week.txt
 RUN echo "Reminder: alex.kamal@mcrn.com needs faster transport." >> /home/belterInaros/next_week.txt
-#User1
+#User5
 RUN useradd -m chrisjenAVA
 RUN mkdir -p /home/chrisjenAVA/.ssh
 RUN passwd -d chrisjenAVA
 RUN touch UN.txt
 RUN echo "Reminder: Arange meeting with Marco and Drummer" >> /home/chrisjenAVA/UN.txt
-#User1
+#User6
 RUN useradd -m Drummer
 RUN mkdir -p /home/Drummer/.ssh
 RUN passwd -d Drummer
@@ -57,6 +57,3 @@ EXPOSE 3389
 COPY ./script1.sh /
 RUN chmod +x /script1.sh
 ENTRYPOINT ["/script1.sh"]
-CMD service xrdp start ; bash
-
-
