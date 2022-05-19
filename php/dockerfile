@@ -8,10 +8,5 @@ RUN docker-php-ext-install mysqli
 EXPOSE 80
 
 #Permissions issue (Commands only work inside dockerfile)
-#COPY /share /
-#RUN chmod 777 /share
-
-#RUN mkdir -p /var/www/html/share 
-#RUN find /var/www/html/share -type d -exec chmod 755 {} \; &&\
-#  find /var/www/html/share -type f -exec chmod 644 {} \; &&\ 
-#  chmod -R 777 /var/www/html/share /var/www/html/share
+ADD . /var/www/html
+RUN chown www-data:www-data /var/www/html/share
