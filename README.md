@@ -11,7 +11,7 @@ The goal is to obtain the "flag"(you will know it when you see it.). It is recom
 ## The scenario:
  You are in a organisation’s office. Upon talking to one of the staff
 members, who introduced himself as Amos Burton, he briefly
-complained about their remote desktop envirnoment.
+complained about their remote desktop envirnoment. He then listed the benefits that access control is disabled, allowing him to work from any host remotly.
 
 ---
 ## The Task 
@@ -21,6 +21,7 @@ environment to gain full control of their service.
 
 ---
 ## CTF setup guide 
+![](/images/ctf_4_1.png)  
 Firstly, clone the repository to your terminal: 
 ```
 git clone https://gitlab.com/thephoenix2022/projecta1.git 
@@ -37,4 +38,4 @@ docker-compose build
 ```
 docker-compose up
 ``` 
-
+![](/images/ctf_5_1.png)

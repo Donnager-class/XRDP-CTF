@@ -7,6 +7,6 @@ RUN docker-php-ext-install mysqli
 #Exposing the correct ports
 EXPOSE 80
 
-#Permissions issue (Commands only work inside dockerfile)
+#Permissions
 ADD . /var/www/html
 RUN chown www-data:www-data /var/www/html/share
