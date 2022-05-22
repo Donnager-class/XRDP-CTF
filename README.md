@@ -24,12 +24,12 @@ environment to gain full control of their service.
 ![](/images/ctf_4_1.png)  
 Firstly, clone the repository to your terminal: 
 ```
-git clone https://gitlab.com/thephoenix2022/projecta1.git 
+git clone https://github.com/Donnager-class/XRDP-CTF.git 
 ```
 
 Go to the repository: 
 ```
-cd projecta1/ 
+cd XRDP-CTF/ 
 ```  
 Build your Dockerfile:  
 ```
